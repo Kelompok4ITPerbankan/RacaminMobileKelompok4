@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:background="@drawable/rectangle_001"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/viewProfileButton"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:background="@drawable/user"
+        android:contentDescription="User"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:layout_width="179dp"
+        android:layout_height="34dp"
+        android:text="Alfan Kasyfil Aziz"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <View
+        android:layout_width="248dp"
+        android:layout_height="135dp"
+        android:background="@drawable/card"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.862" />
+
+    <TextView
+        android:id="@+id/namaTextView"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle_03"
+        android:hint="Nama           : Alfan Kasyfil Aziz"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/statusTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/nomorTextView"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle_03"
+        android:hint="Nomor.Telp : -"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <EditText
+        android:id="@+id/alamatTextView"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle_03"
+        android:hint="Alamat         : -"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <EditText
+        android:id="@+id/statusTextView"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle_03"
+        android:hint="Status          : -"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <Button
+        android:layout_width="148dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#03A9F4"
+        android:onClick="kembali"
+        android:text="Kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomorTextView"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <Button
+        android:layout_width="148dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#03A9F4"
+        android:onClick="editProfil"
+        android:text="Edit Profil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomorTextView"
+        app:layout_constraintVertical_bias="0.474" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
